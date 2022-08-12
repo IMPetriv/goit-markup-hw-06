@@ -803,10 +803,39 @@ img {
 
 .policy-text {
 	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.policy-text span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 14px;
 	font-weight: 400px;
 	line-height: 1.71;
 	color: rgba(117, 117, 117, 1);
+	border-radius: 2px;
+	margin-right: 9px;
+	border: 1px solid #212121;
+	}
+
+.check-icon {
+	fill: transparent;
+}
+
+.modal-check:checked + .policy-text span {
+	background-color: var(--accent-color);	 
+	border: none;
+}
+
+.modal-check:focus + .policy-text span {
+	border-color: #2196f3;
+}
+
+.modal-check:checked + .policy-text .check-icon {
+	fill: #FFFFFF;
+opacity: 1;
 }
 
 .modal-button {
