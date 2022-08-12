@@ -21,7 +21,8 @@
 		<header class="header">
 			<div class="container main-nav">
 				<a href="./index.html" class="header-logo link">
-					<span class="header-logo-part header-logo">Web</span><span class="header-logo-second-part header-logo">Studio</span>
+					<span class="header-logo-part header-logo">Web</span>
+					<span class="header-logo-second-part header-logo">Studio</span>
 				</a>
 
 				<nav class="header-nav">
@@ -334,21 +335,13 @@
 					</ul>
 				</div>
 			</section>
-			<div class="backdrop is-hidden" data-modal>
-				<div class="modal">
-					<div data-modal-close class="modal-close">
-						<svg class="modal-close-icon" width="11" height="11">
-							<use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
-						</svg>
-					</div>
-				</div>
-			</div>
 		</main>
 		<footer class="footer">
 			<div class="container footer-container">
 				<div class="footer-box">
 					<a href="./index.html" class="footer-logo footer-logo-box link">
-						<span class="footer-logo-part footer-logo">Web</span><span class="footer-logo-second-part footer-logo">Studio</span>
+						<span class="footer-logo-part footer-logo">Web</span>
+						<span class="footer-logo-second-part footer-logo">Studio</span>
 					</a>
 					<address class="footer-list">
 						<ul class="list">
@@ -406,6 +399,26 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button type="button" data-modal-close class="modal-close">
+					<svg class="modal-close-icon" width="11" height="11">
+						<use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
+					</svg>
+				</button>
+				<p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+				<form class="modal-form">
+					<p class="form-text">Ім'я</p>
+					<input type="text" name="user-name" id="" class="modal-input" />
+					<p class="form-text">Телефон</p>
+					<input type="tel" name="user-tel" id="" class="modal-input" />
+					<p class="form-text">Пошта</p>
+					<input type="email" name="user-email" id="" class="modal-input" />
+					<p class="form-text">Коментар</p>
+					<button type="submit">Відправити</button>
+				</form>
+			</div>
+		</div>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
